@@ -1,0 +1,10 @@
+{
+  "id": "drfisher.bookmarks",
+  "name": "Bookmarks extension",
+  "fileName": "craft-extenstion-bookmarks",
+  "author": "Pavel Rybin",
+  "author-email": "rybin@internet.ru",
+  "description": "Bookmarks for Craft app",
+  "api": "0.1.0",
+  "main": "index.html"
+}
