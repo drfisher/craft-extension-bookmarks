@@ -1,4 +1,5 @@
 export interface AppState {
+  appVersion: number;
   bookmarks: Bookmarks;
 }
 

@@ -19,7 +19,8 @@
     "paths": {
       "@components/*": ["src/components/*"],
       "@containers/*": ["src/containers/*"],
-      "@src/*": ["src/*"]
+      "@src/*": ["src/*"],
+      "@utils/*": ["src/utils/*"]
     }
   },
   "exclude": ["node_modules"]

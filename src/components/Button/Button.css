@@ -1,0 +1,51 @@
+.button-component {
+  align-items: center;
+  background-color: #fafafa;
+  border-radius: 6px;
+  box-shadow: 0px 1px 2px rgba(0,0,0,0.12);
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+  display: flex;
+  font-size: 14px;
+  font-weight: 500;
+  height: 36px;
+  justify-content: center;
+  justify-content: center;
+  letter-spacing: 0.3px;
+  margin-bottom: 10px;
+  user-select: none;
+}
+  .button-component:hover {
+    background-color: #f1f1f1;
+  }
+
+.button-component-dark {
+  color: rgba(244, 244, 244, 0.7);
+  background-color: rgb(47, 48, 49);
+}
+  .button-component-dark:hover {
+    background-color: rgb(45, 45, 45);
+  }
+
+.button-component-main {
+  background-color: #035EFF;
+  color: #fff;
+}
+  .button-component-main:hover {
+    background-color: #2a77ff;
+  }
+
+.button-component-main.button-component-dark {
+  color: #222;
+  background-color: #44B6FF;
+}
+  .button-component-main.button-component-dark:hover {
+    background-color: #3f9fdd;
+  }
+
+.button-component-disabled,
+.button-component-disabled:hover {
+  cursor: default;
+  opacity: .5;
+}
