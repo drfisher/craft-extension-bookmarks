@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "build": "npm run lint && webpack --mode=production",
+    "build": "npm run test && webpack --mode=production",
     "eslint": "eslint --cache --ext .js,.jsx,.ts,.tsx src",
     "dev": "webpack serve --mode=development",
     "prettier": "prettier --write ./src/**/*.{ts,tsx} ./webpack.config.js",

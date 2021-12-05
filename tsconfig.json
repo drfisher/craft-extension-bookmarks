@@ -15,7 +15,12 @@
     ],
     "typeRoots": [
       "./node_modules/@craftdocs/craft-extension-api"
-    ]
+    ],
+    "paths": {
+      "@components/*": ["src/components/*"],
+      "@containers/*": ["src/containers/*"],
+      "@src/*": ["src/*"]
+    }
   },
   "exclude": ["node_modules"]
 }

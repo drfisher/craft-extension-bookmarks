@@ -23,6 +23,11 @@ module.exports = (env, argv) => {
       publicPath: '/',
     },
     resolve: {
+      alias: {
+        '@components': path.resolve(__dirname, 'src/components/'),
+        '@containers': path.resolve(__dirname, 'src/containers/'),
+        '@src': path.resolve(__dirname, 'src/'),
+      },
       extensions: ['.tsx', '.ts', '.jsx', '.js', '.json'],
     },
     module: {

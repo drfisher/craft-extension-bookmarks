@@ -1,33 +1,25 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import craftXIconSrc from './images/craftx-icon.png';
+import Button from '@components/Button';
+// import craftXIconSrc from './images/craftx-icon.png';
 
 const App: React.FC = () => {
   const isDarkMode = useCraftDarkMode();
 
   React.useEffect(() => {
-    if (isDarkMode) {
-      document.body.classList.add('dark');
-    } else {
-      document.body.classList.remove('dark');
-    }
+    document.body.classList.toggle('dark', isDarkMode);
   }, [isDarkMode]);
 
   return (
-    <div
-      style={{
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-      }}
-    >
-      <img className="icon" src={craftXIconSrc} alt="CraftX logo" />
+    <div>
+      <Button isDarkMode={isDarkMode} />
+      {/* <img className="icon" src={craftXIconSrc} alt="CraftX logo" />
       <button
         className={`btn ${isDarkMode ? 'dark' : ''}`}
         onClick={insertHelloWorld}
       >
         Hello world!
-      </button>
+      </button> */}
     </div>
   );
 };
@@ -42,14 +34,16 @@ function useCraftDarkMode() {
   return isDarkMode;
 }
 
-function insertHelloWorld() {
-  const block = craft.blockFactory.textBlock({
-    content: 'Hello world!',
-  });
+// function insertHelloWorld() {
+//   const block = craft.blockFactory.textBlock({
+//     content: 'Hello world!',
+//   });
 
-  void craft.dataApi.addBlocks([block]);
-}
+//   void craft.dataApi.addBlocks([block]);
+// }
 
-export function initApp() {
+export const initApp = () => {
   ReactDOM.render(<App />, document.getElementById('react-root'));
-}
+};
+
+export default App;
